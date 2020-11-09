@@ -1,57 +1,83 @@
 body {
-    background-color: darkred;
+  background-color: darkred;
 }
 
 #container {
-    background-color: white;
-    width: 80%;
-    margin-left: 7%;
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 60px
+  background-color: white;
+  width: 80%;
+  margin-left: 7%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footer {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    height: 50px;
-    background-color: white;
-    border-top: solid black 1px;
-    text-align: center;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  background-color: white;
+  border-top: solid black 1px;
+  text-align: center;
 }
 
 .footerContent {
-    height: 0px;
-    margin: auto;
+  height: 0px;
+  margin: auto;
 }
 
 .classesTable {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 table,
 th,
 td,
 thead {
-    border: 1px black solid;
-    padding: 3px 10px;
+  border: 1px black solid;
+  padding: 3px 10px;
 }
 
 th {
-    font-size: 115%;
+  font-size: 115%;
 }
 
 nav {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
+  width: 100%;
+  table-layout: fixed;
 }
 
 .navItem {
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  nav {
+    display: block;
+  }
+  .navItem {
+    display: block;
+  }
+  footer {
+    position: inherit;
+  }
+  #container {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 549px) {
+  nav {
+    display: table;
+  }
+  .navItem {
     display: table-cell;
-    text-align: center;
+  }
+  footer {
+    position: fixed;
+  }
+  #container {
+    margin-bottom: 60px;
+  }
 }
