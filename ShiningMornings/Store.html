@@ -11,6 +11,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      function setMethod(id, content) {
+        document.getElementById(id).innerText = content;
+      }
+    </script>
   </head>
 
   <body>
@@ -58,6 +63,31 @@
         <h3>Name: [name]</h3>
         <p>Price: [price]</p>
         <p>Description: [description]</p>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle"
+            data-toggle="dropdown"
+            id="1"
+          >
+            Select Acquisition Method
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" onclick="setMethod('1', 'Delivery')"
+              >Delivery</a
+            >
+            <a
+              class="dropdown-item"
+              onclick="setMethod('1', 'Pickup - Store 1')"
+              >Pickup - Store 1</a
+            >
+            <a
+              class="dropdown-item"
+              onclick="setMethod('1', 'Pickup - Store 2')"
+              >Pickup - Store 2</a
+            >
+          </div>
+        </div>
         <button class="btn btn-primary">Add To Cart</button>
       </div>
       <hr />
@@ -65,6 +95,31 @@
         <h3>Name: [name]</h3>
         <p>Price: [price]</p>
         <p>Description: [description]</p>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle"
+            data-toggle="dropdown"
+            id="2"
+          >
+            Select Acquisition Method
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" onclick="setMethod('2', 'Delivery')"
+              >Delivery</a
+            >
+            <a
+              class="dropdown-item"
+              onclick="setMethod('2', 'Pickup - Store 1')"
+              >Pickup - Store 1</a
+            >
+            <a
+              class="dropdown-item"
+              onclick="setMethod('2', 'Pickup - Store 2')"
+              >Pickup - Store 2</a
+            >
+          </div>
+        </div>
         <button class="btn btn-primary">Add To Cart</button>
       </div>
       <hr />
@@ -74,6 +129,31 @@
         <h3>Name: [name]</h3>
         <p>Price: [price]</p>
         <p>Description: [description]</p>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle"
+            data-toggle="dropdown"
+            id="3"
+          >
+            Select Acquisition Method
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" onclick="setMethod('3', 'Delivery')"
+              >Delivery</a
+            >
+            <a
+              class="dropdown-item"
+              onclick="setMethod('3', 'Pickup - Store 1')"
+              >Pickup - Store 1</a
+            >
+            <a
+              class="dropdown-item"
+              onclick="setMethod('3', 'Pickup - Store 2')"
+              >Pickup - Store 2</a
+            >
+          </div>
+        </div>
         <button class="btn btn-primary">Add To Cart</button>
       </div>
       <hr />
@@ -81,6 +161,31 @@
         <h3>Name: [name]</h3>
         <p>Price: [price]</p>
         <p>Description: [description]</p>
+        <div class="dropdown">
+          <button
+            type="button"
+            class="btn btn-primary dropdown-toggle"
+            data-toggle="dropdown"
+            id="4"
+          >
+            Select Acquisition Method
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" onclick="setMethod('4', 'Delivery')"
+              >Delivery</a
+            >
+            <a
+              class="dropdown-item"
+              onclick="setMethod('4', 'Pickup - Store 1')"
+              >Pickup - Store 1</a
+            >
+            <a
+              class="dropdown-item"
+              onclick="setMethod('4', 'Pickup - Store 2')"
+              >Pickup - Store 2</a
+            >
+          </div>
+        </div>
         <button class="btn btn-primary">Add To Cart</button>
       </div>
     </div>
